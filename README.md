@@ -3,6 +3,7 @@ This is the experiments code lib for knowledge graph assisted sensing data gener
 
 # Code Architecture
 The architecture of the codes follows such a tree:
+
     .
     ├── data \\ store the sensor data
     │   └── WKGO \\ a specific file to store all files of WKGO
@@ -22,10 +23,14 @@ The architecture of the codes follows such a tree:
 # Experiment 1
 ## Baseline
 Task: Given a week of data, generate the data of next week.
+
 Model: LSTM model is OK.
+
 Training Data: different types of sensing data (e.g. temperature, flowrate, etc.) of ONE chiller.
+
 Testing Data: the sensing data of ONE temperature sensor of this chiller, note that this sensor should not be used to train the model.
 
 ## Our solution
 Most config is the same with the baseline, excludes:
+
 Input: we need an extra input that embeds the type information of the sensor.
