@@ -6,7 +6,7 @@ The architecture of the codes follows such a tree:
     .
     ├── data \\ store the sensor data
     │   └── WKGO \\ a specific file to store all files of WKGO
-    ├── metadata \\ store the metadata
+    ├── metadata \\ store the metadata, that are .ttl files
     ├── results \\ store the exmperiment results
     ├── saved_model \\ store the trained models
     └── exp
