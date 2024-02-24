@@ -1,0 +1,20 @@
+# Introduction
+This is the experiments code lib for knowledge graph assisted sensing data generation.
+
+# Code Architecture
+The architecture of the codes follows such a tree:
+    .
+    ├── data \\ store the sensor data
+    │   └── WKGO \\ a specific file to store all files of WKGO
+    ├── metadata \\ store the metadata
+    ├── results \\ store the exmperiment results
+    ├── saved_model \\ store the trained models
+    └── exp
+        ├── data_provider \\ initialize the data providers
+        ├── model \\ initialize the generation models
+        ├── embed \\ some embedding classes
+        ├── data_clean \\ functions specific to individual csv files
+        ├── utilize \\ some general toolkit functions
+        ├── plot \\ visualization functions
+        ├── exp_{} \\ a specific experiment interface
+        └── run \\ the entrance of the experiments, it calls exp_{}
